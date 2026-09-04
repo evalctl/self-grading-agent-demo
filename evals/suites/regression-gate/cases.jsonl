@@ -1,0 +1,1 @@
+{"id":"fix-median","task":"The median() function is wrong for even-length inputs. Fix statskit/stats.py so the frozen tests pass. Do not modify anything under tests/.","workspace":"fixtures/fix-median","expect":{"exit_code":0,"text_contains":["OK"]}}

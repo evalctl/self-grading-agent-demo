@@ -1,0 +1,40 @@
+{
+  "cases": "cases.jsonl",
+  "name": "regression-gate",
+  "runner": {
+    "argv": [
+      "python3",
+      "$EVALCTL_WORKSPACE/run_tests.py"
+    ],
+    "command": null,
+    "cwd": null,
+    "env_allowlist": [
+      "PATH",
+      "HOME"
+    ],
+    "max_output_bytes": 1048576,
+    "redact_env_values": [],
+    "redact_patterns": [],
+    "shell": false,
+    "timeout_seconds": 60
+  },
+  "scorers": [
+    {
+      "name": "exit-code",
+      "required": true
+    },
+    {
+      "name": "command",
+      "id": "test-integrity",
+      "argv": [
+        "python3",
+        "$EVALCTL_WORKSPACE/test_integrity.py"
+      ],
+      "required": true
+    },
+    {
+      "name": "contains",
+      "required": false
+    }
+  ]
+}
