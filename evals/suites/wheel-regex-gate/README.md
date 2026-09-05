@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../../assets/wordmark-dark.png" />
+  <img alt="evalctl" src="../../../assets/wordmark-light.png" width="360" />
+</picture>
+
 # Watch an AI agent get caught cheating — on a real bug
 
 This is the same game as the [median demo](../../../README.md), but the bug

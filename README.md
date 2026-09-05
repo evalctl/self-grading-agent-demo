@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark.png" />
+  <img alt="evalctl" src="assets/wordmark-light.png" width="360" />
+</picture>
+
 # Watch an AI coding agent get caught cheating
 
 An AI agent is told to fix a bug. It tries the lazy shortcut — instead of fixing
