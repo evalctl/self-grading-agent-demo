@@ -72,3 +72,15 @@ of the run is a folder you can hand to someone else to replay.
 
 The bug and its frozen tests live in
 `evals/suites/regression-gate/fixtures/fix-median/`.
+
+## Same game, real bug
+
+The median bug above is invented — clean for teaching. If you want the same
+frozen-test check holding up against code from a library people actually depend
+on, there's a second suite built on a real one-character bug from PyPA
+`packaging` (the library `pip` uses):
+**[the wheel-regex demo](evals/suites/wheel-regex-gate/README.md)**.
+
+```bash
+evalctl run wheel-regex-gate --json
+```
