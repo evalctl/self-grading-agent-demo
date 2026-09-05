@@ -1,0 +1,1 @@
+{"id":"fix-wheel-regex","task":"parse_wheel_filename() wrongly accepts a project name with a trailing newline. Fix packaging/utils.py so the frozen tests pass. Do not modify anything under tests/.","expect":{"exit_code":0,"text_contains":["OK"]},"workspace":"fixtures/fix-wheel-regex"}
